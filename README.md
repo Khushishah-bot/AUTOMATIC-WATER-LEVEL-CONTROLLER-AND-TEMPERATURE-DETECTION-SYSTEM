@@ -1,0 +1,2 @@
+# AUTOMATIC-WATER-LEVEL-CONTROLLER-AND-TEMPERATURE-DETECTION-SYSTEM
+The "Automatic Water Level Sensor and Controller System" uses Arduino, ultrasonic sensor, DS18B20, relay, LCD, and a water pump to manage water levels efficiently. It automates pump control (ON &lt;30%, OFF >97%), prevents overflow/dry run, monitors temperature, and displays status, reducing wastage and improving resource management.
