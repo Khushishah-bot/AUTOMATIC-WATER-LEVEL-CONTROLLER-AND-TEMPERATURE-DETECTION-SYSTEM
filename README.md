@@ -25,6 +25,8 @@ The system requires a power supply to operate the Arduino, sensors, and LCD. It 
 
 
 The Working Principle of the Automatic Water Level Sensor & Controller System 
+
+
 The Automatic Water Level Sensor & Controller System monitors the water level in the tank so that water pump will run automatically to maintain an optimum water level. Below is a detailed breakdown of how the system actually works 
  1. System Initialization: When the system is powered on, the Arduino initializes and runs the program. The TV I2C display initializes to demonstrate the water position, pump status, and the water temperature. The water temperature is displayed on the TV as the DS18B20 temperature detector is actuated to cover it. The Ultrasonic detector is turned on and water starts to measure its level.
 
