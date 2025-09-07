@@ -3,16 +3,22 @@ The "Automatic Water Level Sensor and Controller System" uses Arduino, ultrasoni
  Circuit  Diagram:
 <img width="1200" height="569" alt="Screenshot 2025-09-06 012830" src="https://github.com/user-attachments/assets/7b344a14-8d1d-4a99-8695-496af851e7cc" />
 Components Used-
+
 Ultrasonic Sensor:
 The ultrasonic sensor is positioned at the top of the water tank to measure the distance from the sensor to the water surface. It uses sound waves to detect the water level and sends this information to the microcontroller for processing. Based on the distance, the water level is calculated and compared with predefined thresholds (30% and 97%).
+
 DS18B20 Temperature Sensor:
 The DS18B20 sensor continuously measures the temperature of the water. This data is sent to the microcontroller and displayed on the LCD to give the user a complete understanding of the tank's status.
+
 Microcontroller (Arduino):
 The Arduino acts as the central unit that processes inputs from both the ultrasonic and temperature sensors. It also controls the output, including activating or deactivating the pump. The Arduino is programmed to turn on the pump when the water level falls below 30% and turn it off when it rises above 97%. It also sends information to the LCD for real-time display.
+
 Relay:
 The relay module acts as an interface between the Arduino and the 220V water pump. When the Arduino determines that the water level is low (below 30%), it sends a signal to the relay, which then closes the circuit and turns the pump on. When the water level exceeds 97%, the Arduino sends a signal to open the relay and turn off the pump.
+
 LCD Display:
 The LCD display (16x2 I2C) shows real-time information such as the water level (in percentage), pump status (ON/OFF), and the water temperature. This display allows users to easily monitor the system without needing external tools or software.
+
 Power Supply:
 The system requires a power supply to operate the Arduino, sensors, and LCD. It typically uses a 5V supply for the Arduino and sensors, while the relay and water pump require a separate 220V AC power supply. The power supply ensures all components function properly without interruptions.
 
